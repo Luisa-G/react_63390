@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom"
+import CartWidget from "../CartWidget/CartWidget"
 
 export default function NavBar() {
     return (
@@ -20,6 +21,7 @@ export default function NavBar() {
                     <Link class="nav-link" to="/accesorios">Accesorios</Link>
                     </li>
                 </ul>
+                <CartWidget cartCount={1}/>
                 </div>
             </div>
         </nav>
